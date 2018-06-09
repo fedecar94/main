@@ -27,7 +27,7 @@
 .hicimos {
     min-height: 100vh;
     padding-top: 10vh;
-    background-color: #60dad1;
+    background-color: #bef274;
 }
 .trabajos {
     padding-top: 5vh;
@@ -35,7 +35,7 @@
 .hacemos {
     min-height: 100vh;
     padding-top: 10vh;
-    background-color: #494949;
+    background-color: #49494966;
 }
 .servicios {
     padding-top: 5vh;
@@ -43,8 +43,13 @@
 .llamame {
     min-height: 100vh;
     padding-top: 10vh;
-    background-color: #60dad1;
+    background-color: #c2f7e1;
 }
 .contacto {
     padding-top: 5vh;
+}
+.job {
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    text-align: center;
 }
