@@ -53,17 +53,17 @@
             <h3>Nuestros trabajos</h3>
             <section class="trabajos">
                 <div class="row">
-                    <div class="col-sm-4">
+                    <div class="col-md-4 col-sm-6">
                         <div class="job" style="background-image: url(https://i.imgur.com/HP97Gzc.jpg);">
                             <a href="https://catalgo.a1.com.py" role="button" class="btn btn-lg btn-outline-success">Catalogo Web</a>
                         </div>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-md-4 col-sm-6">
                         <div class="job" style="background-image: url(https://i.imgur.com/6Pqb9es.jpg);">
                             <a href="https://contaweb.a1.com.py" role="button" class="btn btn-lg btn-outline-success">Contabilidad Online</a>
                         </div>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-md-4 col-sm-6">
                         <div class="job" style="background-image: url(https://i.imgur.com/ZeEu1Ne.jpg);">
                             <a href="https://dhont.a1.com.py" role="button" class="btn btn-lg btn-outline-success">Calculo D'Hont</a>
                         </div>
@@ -89,20 +89,31 @@
             <h3>Queremos trabajar con usted</h3>
             <section class="contacto">
                 <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-md-6">
                         <p><b><i class="fas fa-phone-square"></i> Telefono:</b> +595 962 29 59 39</p>
                         <p><b><i class="fas fa-envelope"></i>  Correo:</b> fedecar94 @outlook.com</p>
                         <p><b><i class="fab fa-linkedin"></i> LinkedIn:</b> <a href="https://www.linkedin.com/in/fedecar94/">@fedecar94</a></p>
                         <p>Su consulta no molesta.</p>
                     </div>
-                    <div class="col-sm-6">
-                        <iframe width="100%" height="450" frameborder="0" style="border:0"
-                        src="https://www.google.com/maps/embed/v1/view?zoom=12&center=-25.3962%2C-57.5363&key=AIzaSyD9l4KuJOxcO0Ho2i5pfUC_GJTPKIs1g34" allowfullscreen></iframe>
+                    <div class="col-md-6">
+                        <div id="map"></div>
                     </div>
                 </div>
             </section>
         </div>
     </div>
+    <script>
+        var map;
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: -25.3962, lng: -57.5363},
+            zoom: 12
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9l4KuJOxcO0Ho2i5pfUC_GJTPKIs1g34&callback=initMap"
+    async defer></script>
+      
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <script defer src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
