@@ -93,17 +93,34 @@
                         <p><b><i class="fas fa-phone-square"></i> Telefono:</b> +595 962 29 59 39</p>
                         <p><b><i class="fas fa-envelope"></i>  Correo:</b> fedecar94 @outlook.com</p>
                         <p><b><i class="fab fa-linkedin"></i> LinkedIn:</b> <a href="https://www.linkedin.com/in/fedecar94/">@fedecar94</a></p>
+                        <p>Su consulta no molesta.</p>
                     </div>
                     <div class="col-sm-6">
-                        <p>Su consulta no molesta.</p>
+                        <div id="map"></div>
                     </div>
                 </div>
             </section>
         </div>
     </div>
+    <script>
+        function initMap() {
+            var hq = {lat: -25.384230, lng: -57.547698};
+            var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 15,
+            center: hq
+            });
+            var marker = new google.maps.Marker({
+            position: hq,
+            map: map
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9l4KuJOxcO0Ho2i5pfUC_GJTPKIs1g34&callback=initMap"
+        async defer>
+    </script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script defer src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
   </body>
 </html>
