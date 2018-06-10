@@ -96,28 +96,13 @@
                         <p>Su consulta no molesta.</p>
                     </div>
                     <div class="col-sm-6">
-                        <div id="map"></div>
+                        <iframe width="30vh" height="30vh" frameborder="0" style="border:0"
+                        src="https://www.google.com/maps/embed/v1/view?zoom=12&center=-25.384230,-57.547698&key=AIzaSyD9l4KuJOxcO0Ho2i5pfUC_GJTPKIs1g34" allowfullscreen></iframe> 
                     </div>
                 </div>
             </section>
         </div>
     </div>
-    <script>
-        function initMap() {
-            var hq = {lat: -25.384230, lng: -57.547698};
-            var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 15,
-            center: hq
-            });
-            var marker = new google.maps.Marker({
-            position: hq,
-            map: map
-            });
-        }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9l4KuJOxcO0Ho2i5pfUC_GJTPKIs1g34&callback=initMap"
-        async defer>
-    </script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <script defer src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
