@@ -54,6 +54,5 @@
     text-align: center;
 }
 #map {
-    min-height: 50vh;
-    max-height: 75vh;
+    height: 100%;
 }
