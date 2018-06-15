@@ -103,17 +103,21 @@
         </div>
     </div>
     <script>
-        var map;
-        function initMap() {
-            map = new google.maps.Map(document.getElementById('map'), {
-            center: {lat: -25.3962, lng: -57.5363},
-            zoom: 12
-            });
-        }
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxI_wLw6jCfBFGZ-RAzwJRlhAK30o_r_8&callback=initMap"
-    async defer></script>
-      
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxI_wLw6jCfBFGZ-RAzwJRlhAK30o_r_8&callback=initMap">
+    </script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <script defer src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
