@@ -56,3 +56,7 @@
 #map {
     height: 100%;
 }
+.llamame section div{
+    min-height: 50vh;
+    max-height: 75vh;
+}
