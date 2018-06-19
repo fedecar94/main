@@ -56,3 +56,10 @@
 #map {
     height: 100%;
 }
+.service h1 {
+    text-align: center;
+    font-size: 500%
+}
+.service h2 {
+    text-align: center;
+}
