@@ -4,11 +4,11 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 .parallax-over {
     background-color: #363636DD;
-    height: 100vh;   
+    min-height: 100vh;   
 }
 .parallax-inner {
     padding: 40vh 0%;
